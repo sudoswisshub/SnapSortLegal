@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapSort AI - Smart Document Scanner</title>
+    <meta name="description"
+        content="Transform document organization with SnapSort AI - your intelligent, privacy-first scanner. 100% offline, zero tracking. Completely free.">
+    <link rel="stylesheet" href="legal.css">
+    <style>
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: linear-gradient(135deg, #00C9B7 0%, #0099CC 100%);
+            color: white;
+            border-radius: 20px;
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero .tagline {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .hero .description {
+            font-size: 1.1em;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 18px 40px;
+            background: white;
+            color: #00C9B7;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid #e9ecef;
+        }
+
+        .feature-card h3 {
+            color: #00C9B7;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .feature-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .feature-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #00C9B7;
+            font-weight: bold;
+        }
+
+        .privacy-banner {
+            background: #f0f9ff;
+            border: 2px solid #00C9B7;
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .privacy-banner h2 {
+            color: #00C9B7;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #00C9B7;
+            display: block;
+        }
+
+        .stat-label {
+            color: #6c757d;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero .tagline {
+                font-size: 1.2em;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>SnapSort AI</h1>
+            <nav>
+                <a href="support.html">Support</a>
+                <a href="terms.html">Terms</a>
+                <a href="privacy.html">Privacy</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero">
+                <h1>SnapSort AI</h1>
+                <p class="tagline">Smart Document Scanner</p>
+                <p class="description">
+                    Transform the way you organize documents, receipts, and important papers.
+                    Intelligent AI categorization, powerful search, complete privacy. All on your device.
+                </p>
+                <a href="https://apps.apple.com" class="cta-button">Download on the App Store</a>
+            </div>
+
+            <section class="privacy-banner">
+                <h2>100% Private. 100% Offline. 100% Free.</h2>
+                <p>Everything stays on your iPhone. No cloud, no accounts, no tracking. Your documents are yours alone.
+                </p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Data Collected</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Cloud Uploads</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">Hidden Fees</span>
+                    </div>
+                </div>
+            </section>
+
+            <h2 style="text-align: center; margin-bottom: 40px;">Powerful Features</h2>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Smart Scanning</h3>
+                    <ul>
+                        <li>AI-powered automatic categorization</li>
+                        <li>OCR text recognition</li>
+                        <li>Multi-page document support</li>
+                        <li>Automatic edge detection</li>
+                        <li>Works completely offline</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Effortless Organization</h3>
+                    <ul>
+                        <li>Auto-created smart folders</li>
+                        <li>Full-text search</li>
+                        <li>Custom tags and notes</li>
+                        <li>Archive management</li>
+                        <li>Category-based browsing</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Batch Operations</h3>
+                    <ul>
+                        <li>Multi-select items</li>
+                        <li>Bulk PDF export</li>
+                        <li>Batch tagging</li>
+                        <li>Swipe gestures</li>
+                        <li>Quick archive/delete</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Expense Tracking</h3>
+                    <ul>
+                        <li>Automatic receipt totals</li>
+                        <li>Monthly insights</li>
+                        <li>Category breakdowns</li>
+                        <li>Merchant tracking</li>
+                        <li>All calculated offline</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Export & Share</h3>
+                    <ul>
+                        <li>PDF export (single or batch)</li>
+                        <li>Share documents easily</li>
+                        <li>Print support</li>
+                        <li>All data portable</li>
+                        <li>No vendor lock-in</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Beautiful Design</h3>
+                    <ul>
+                        <li>Modern, intuitive interface</li>
+                        <li>Dark mode support</li>
+                        <li>Smooth animations</li>
+                        <li>iPad optimized</li>
+                        <li>Designed for iOS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <section>
+                <h2>Perfect For</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>Small Business Owners</h3>
+                        <p>Track expenses, organize receipts, and manage invoices without complicated accounting
+                            software.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Freelancers</h3>
+                        <p>Keep all your receipts and business documents organized for tax time. Export PDFs for your
+                            accountant.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Homeowners</h3>
+                        <p>Store warranties, manuals, and important documents. Never lose track of serial numbers again.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Students</h3>
+                        <p>Scan and organize lecture notes, assignments, and important documents. Search everything
+                            instantly.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Privacy-Conscious Users</h3>
+                        <p>Keep your sensitive documents completely private. No cloud uploads, no data collection, no
+                            tracking.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Anyone Going Paperless</h3>
+                        <p>Reduce clutter and go digital without sacrificing privacy or paying monthly fees.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="privacy-banner" style="margin-top: 60px;">
+                <h2>Why SnapSort AI?</h2>
+                <p style="max-width: 800px; margin: 20px auto; font-size: 1.1em; line-height: 1.6;">
+                    Unlike other document scanners that upload your private documents to the cloud,
+                    SnapSort AI keeps everything on your device. Our advanced AI runs completely offline,
+                    giving you powerful organization without compromising your privacy.
+                </p>
+                <p style="margin-top: 30px;">
+                    <strong>No subscriptions. No in-app purchases. No hidden fees.</strong><br>
+                    SnapSort AI is completely free to use with all features unlocked.
+                </p>
+            </section>
+
+            <section style="text-align: center; margin: 60px 0;">
+                <h2>Ready to Get Started?</h2>
+                <p style="font-size: 1.1em; margin: 20px 0 30px; color: #6c757d;">
+                    Download SnapSort AI today and experience the future of document organization.
+                </p>
+                <a href="https://apps.apple.com" class="cta-button">Download on the App Store</a>
+            </section>
+
+            <section>
+                <h2>Contact & Support</h2>
+                <p>Have questions? Need help? We're here for you.</p>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:alice.turcanu91@gmail.com">alice.turcanu91@gmail.com</a>
+                    </p>
+                    <p><strong>Support:</strong> <a href="support.html">Visit our Support page</a></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 SnapSort AI. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="support.html">Support</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
